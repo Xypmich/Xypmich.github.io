@@ -208,6 +208,11 @@ header {
     line-height: 24px;
 }
 
+.trend-info__title:hover {
+    color: #b59f5b;
+    cursor: pointer;
+}
+
 .general-content {
     display: flex;
     max-width: 1170px;
@@ -373,6 +378,11 @@ header {
     line-height: 18px;
 }
 
+.post-short-info__title:hover {
+    color: #b59f5b;
+    cursor: pointer;
+}
+
 .search {
     display: flex;
     margin-top: 60px;
@@ -518,6 +528,11 @@ header {
     text-transform: uppercase;
 }
 
+.tags-list__item:hover {
+    border-color: #b59f5b;
+    cursor: pointer;
+}
+
 .tags-list__item:nth-child(3n + 2) {
     margin: 0 5px;
 }
@@ -570,6 +585,11 @@ header {
     margin-bottom: 16px;
     font-size: 100%;
     font-weight: bold;
+}
+
+.theme-name__title:hover {
+    color: #b59f5b;
+    cursor: pointer;
 }
 
 .theme-name__counter {
@@ -657,6 +677,7 @@ header {
 }
 
 .description-link:hover {
+    text-decoration: underline;
     cursor: pointer;
 }
 
@@ -722,6 +743,10 @@ footer {
 .social {
     width: 20px;
     height: 20px;
+}
+
+.social:hover {
+    cursor: pointer;
 }
 
 .social:nth-child(3n + 2) {
