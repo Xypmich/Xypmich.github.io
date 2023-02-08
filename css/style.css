@@ -194,6 +194,7 @@ header {
 .trend-categories {
     display: flex;
     flex-wrap: wrap;
+    margin:0;
     font-size: 14px;
     list-style-type: none;
     padding-left: 0;
