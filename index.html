@@ -7,6 +7,35 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div class="popup _hidden">
+        <div class="popup-window">
+            <img src="/images/svg/form-x.svg" class="close-btn">
+            <h4 class="popup__title">Ваш фидбек</h4>
+            <form action="#" class="popup-form">
+                <span>Как часто вы заходите на сайт?</span>
+                <select name="visit-dropbox" id="visit-dropbox" >
+                    <option value="1" selected>Почти каждый день</option>
+                    <option value="2">Раз в несколько дней</option>
+                    <option value="3">Раз в несколько недель</option>
+                    <option value="4">Несколько раз в год</option>
+                </select>
+                <span>Вы подписаны на e-mail рассылку?</span>
+                <div class="radios">
+                    <label class="radio">
+                        <input type="radio" name="subs-radio" id="subs-radio-yes" value="yes" class="subs-radio" checked>
+                        <span class="subs-radio-label label-yes">Да</span>
+                    </label>
+                    <label class="radio radio-no">
+                        <input type="radio" name="subs-radio" id="subs-radio-no" value="no" class="subs-radio">
+                        <span class="subs-radio-label label-no">Нет</span>
+                    </label>
+                </div>
+                <span>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                <textarea name="comment" id="comment" placeholder="Может, больше рецептов?"></textarea>
+                <input type="submit" value="Отправить" class="submit-btn">
+            </form>
+        </div>
+    </div>
     <header>
         <div class="header-mask">
             <div class="header-content">
@@ -348,9 +377,12 @@
             <h2 class="products__title">Наши изделия</h2>
         <div class="products-wrapper">
             <div class="product">
-                <img src="/images/shop-item-desk1.jpg"
-                     alt="Дизайнерский стул и подушка с надписью - hang out spot"
-                     class="product__image">
+                <picture class="product__image">
+                    <source media="(max-width: 640px)" srcset="/images/shop-item-mobile1.jpg">
+                    <source media="(max-width: 1199px)" srcset="/images/shop-item-tablet1.jpg">
+                    <img src="/images/shop-item-desk1.jpg"
+                         alt="Дизайнерский стул и подушка с надписью - hang out spot">
+                </picture>
                 <div class="product-info">
                     <h3 class="product-info__title">Подушки на диван</h3>
                     <p class="product-info__description">
@@ -369,9 +401,12 @@
                 </div>
             </div>
             <div class="product">
-                <img src="/images/shop-item-desk2.jpg"
-                     alt="Кукла ручной работы сидит возле стопки крафтовых книг и чашки"
-                     class="product__image">
+                <picture class="product__image">
+                    <source media="(max-width: 640px)" srcset="/images/shop-item-mobile2.jpg">
+                    <source media="(max-width: 1199px)" srcset="/images/shop-item-tablet2.jpg">
+                    <img src="/images/shop-item-desk2.jpg"
+                     alt="Кукла ручной работы сидит возле стопки крафтовых книг и чашки">
+                </picture>
                 <div class="product-info">
                     <h3 class="product-info__title">Кукла «Зайчик»</h3>
                     <p class="product-info__description">
@@ -391,9 +426,12 @@
                 </div>
             </div>
             <div class="product">
-                <img src="/images/shop-item-desk3.jpg"
-                     alt="Шестиугольная рамка для фотографий возле дизайнерской вазы с веточками"
-                     class="product__image">
+                <picture class="product__image">
+                    <source media="(max-width: 640px)" srcset="/images/shop-item-mobile3.jpg">
+                    <source media="(max-width: 1199px)" srcset="/images/shop-item-tablet3.jpg">
+                    <img src="/images/shop-item-desk3.jpg"
+                     alt="Шестиугольная рамка для фотографий возле дизайнерской вазы с веточками">
+                </picture>
                 <div class="product-info">
                     <h3 class="product-info__title">Шестиугольная рамка</h3>
                     <p class="product-info__description">
